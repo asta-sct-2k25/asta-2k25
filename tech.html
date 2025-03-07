@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ASTA-2K25 - Technical Event</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        @font-face {
+            font-family: 'AvengersFont';
+            src: url('top1/fonts/Avengers.ttf'); /* Verify this path */
+        }
+
+        body {
+          
+            background: linear-gradient(135deg, #f3f3f3, #e1e1e1);
+            color: #333;
+            font-family: Arial, sans-serif;
+            background-image: url('bg.jpg'); /* Change to your image URL */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .navbar a {
+            color: white !important;
+        }
+
+        .asta-title {
+            font-family: 'AvengersFont', Arial, sans-serif;
+            font-size: 5rem;
+            margin-top: 50px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .hero_section {
+            text-align: center;
+            padding: 50px 20px;
+            color: #ffffff;
+        }
+
+        .event-card {
+            background: transparent;
+            color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgb(255, 255, 255);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .event-card:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-custom {
+            background: #ff5733;
+            color: rgb(255, 255, 255);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn-custom:hover {
+            background: #ffd105;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">ASTA-2K25</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="main.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">EVENTS</a></li>
+                </ul>
+            </div>
+        </div>  
+    </nav>
+
+    <!-- Title -->
+    <h1 class="asta-title">ASTA-2K25</h1>
+
+    <!-- Hero Section -->
+    <section class="hero_section">
+        <h2>Welcome</h2>
+        <p>Join us for an amazing lineup of Technical events!</p>
+    </section>
+
+    <!-- Events Section -->
+    <div class="container py-5" id="events">
+      <!-- Event Cards -->
+      <div class="row g-4 justify-content-center">
+          <!-- Card 1 -->
+          <!-- Event Card -->
+<div class="col-md-6 col-lg-4">
+  <div class="event-card text-center">
+      <h3>Insight Speeko</h3>
+      <p>Paper Presentation</p>
+      <button class="btn-custom" onclick="openPopup('popup1')">Rules</button>
+  </div>
+</div>
+
+<!-- Popup Window -->
+<div id="popup1" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup1')">&times;</span>
+    <h4>Insight Speeko - Rules</h4>
+    <ul>
+      <li>Teams may consist of no more than four members.</li>
+      <li>A paper presentation on the trendiest and most advanced technologies is
+        strongly advised.</li>
+      <li>A 250-word abstract and no more than 15 PPT slides are permissible.</li>
+      <li>The presentation has a maximum of five minutes.</li>
+      <li>Content should be presented in an understandable and factual way.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- CSS -->
+<style>
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+  }
+  .popup-content {
+    text-align:left;
+    position:left;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+</style>
+
+<!-- JavaScript -->
+<script>
+  function openPopup(id) {
+    document.getElementById(id).style.display = "block";
+  }
+  function closePopup(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+
+          <!-- Card 2 - Prakalpa -->
+<div class="col-md-6 col-lg-4">
+  <div class="event-card text-center">
+      <h3>Prakalpa</h3>
+      <p>Project Presentation</p>
+      <button class="btn-custom" onclick="openPopup('popup2')">Rules</button>
+  </div>
+</div>
+
+<!-- Popup Window -->
+<div id="popup2" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup2')">&times;</span>
+    <h4>Prakalpa - Rules</h4>
+    <ul>
+      <li>A team may consist of no more than four members.</li>
+      <li>You are permitted to select the paper's themes on our choice (relevant to the department).</li>
+      <li>The abstract needs to be acknowledged through mail.</li>
+      <li>The maximum length for an abstract is 250 words, and the maximum
+        number of slides for a PowerPoint presentation is 12.</li>
+      <li>The presentation was given a maximum of five to eight minutes, and the
+        information was presented in an understandable and factual way.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- CSS -->
+<style>
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+  }
+  .popup-content {
+    text-align: center;
+    position: relative;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+</style>
+
+<!-- JavaScript -->
+<script>
+  function openPopup(id) {
+    document.getElementById(id).style.display = "block";
+  }
+  function closePopup(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+
+
+          <!-- Card 3 - CodelQ -->
+<div class="col-md-6 col-lg-4">
+  <div class="event-card text-center">
+      <h3>CodelQ</h3>
+      <p>Code Debugging</p>
+      <button class="btn-custom" onclick="openPopup('popup3')">Rules</button>
+  </div>
+</div>
+
+<!-- Popup Window -->
+<div id="popup3" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup3')">&times;</span>
+    <h4>CodelQ - Rules</h4>
+    <ul>
+      <li>First Round</li>
+      <li>The programs will be provided in Python and C.</li>
+      <li>There are twenty multiple-choice questions in the test, and each one is
+        awarded one mark.</li>
+      <li>It is important for participants to arrive at the event location promptly.</li>
+      <li>It is forbidden to use electronic devices within the venue..</li>
+      <li>You are permitted to bring just a pen, and there will be paper available in the
+        hallway.</li>
+      <li>There will be no additional time allotted for the first round, which will last
+        only 20 minutes.</li>
+      <li>The people who made the short list are contacted by phone (20 minutes).</li>
+      <li>Second Round</li>
+      <li>The programs will be given in both Python and C.</li>
+      <li>There are four questions on the question paper, and each one is awarded
+        five marks.</li>
+      <li>It is forbidden to use electronic devices within the venue.</li>
+      <li>Participants are required to modify the provided code and generate the
+        specified output in the system.</li>
+      <li>There will be no more time allotted for the second round; it will last only
+        20 minutes.</li>
+      <li>The winners are notified via phone calls.</li>
+    
+    </ul>
+  </div>
+</div>
+
+<!-- CSS -->
+<style>
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+  }
+  .popup-content {
+    text-align: center;
+    position: relative;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+</style>
+
+<!-- JavaScript -->
+<script>
+  function openPopup(id) {
+    document.getElementById(id).style.display = "block";
+  }
+  function closePopup(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+
+         <!-- Card 4 - Iconic Design -->
+<div class="col-md-6 col-lg-4">
+  <div class="event-card text-center">
+      <h3>Iconic Design</h3>
+      <p>Logo Design</p>
+      <button class="btn-custom" onclick="openPopup('popup4')">Rules</button>
+  </div>
+</div>
+
+<!-- Popup Window -->
+<div id="popup4" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup4')">&times;</span>
+    <h4>Iconic Design - Rules</h4>
+    <ul>
+      <li>Use only Photoshop to design your logo.</li>
+      <li>Participants have 45 minutes to design their logo.</li>
+      <li>Participants need to design logo individually don’t collaborate with others.</li>
+      <li>Don’t copy logos from other platforms.</li>
+      <li>Participants should include appropriate slogans for their logo.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- CSS -->
+<style>
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+  }
+  .popup-content {
+    text-align: center;
+    position: relative;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+</style>
+
+<!-- JavaScript -->
+<script>
+  function openPopup(id) {
+    document.getElementById(id).style.display = "block";
+  }
+  function closePopup(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+
+
+          <!-- Card 5 - Twins Sparton -->
+<div class="col-md-6 col-lg-4">
+  <div class="event-card text-center">
+      <h3>Twins Sparton</h3>
+      <p>Output-Code-Output</p>
+      <button class="btn-custom" onclick="openPopup('popup5')">Rules</button>
+  </div>
+</div>
+
+<!-- Popup Window -->
+<div id="popup5" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup5')">&times;</span>
+    <h4>Twins Sparton - Rules</h4>
+    <ul><li><b>First Round</b></li>
+      <li>There are just two people on each team.</li>
+        <li>There are 30 multiple-choice questions.</li>
+          <li>Every member ought to take part independently.</li>
+            <li>Every participant is required to attend 15 questions.</li>
+              <li>Teams score an average of 20 points per round.</li>
+                <li>The team advances to the second round if their score is 20.</li>
+                <li><b>Second Round</b></li>
+              <li>The team member utilises a computing device to solve the quiz.</li>
+                <li>Every member must have an account with Gmail.</li>
+                  <li>Twenty digital questions are given.</li>
+                    <li>Every member takes part independently.</li>
+                      <li>There are ten questions for each member.</li>
+                        <li>Teams score an average of 15 points.</li>
+                        <li><b>Third Round</b></li>
+                        <li>>One team member can view the conditions and output, but their eyes will be
+closed, and someone else must write the code for that output.</li>
+<li>An eye-folded member will assist a colleague with accurate output solely
+through verbal communication they will not accept any actions.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- CSS -->
+<style>
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+  }
+  .popup-content {
+    text-align: center;
+    position: relative;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+</style>
+
+<!-- JavaScript -->
+<script>
+  function openPopup(id) {
+    document.getElementById(id).style.display = "block";
+  }
+  function closePopup(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+
+
+         <!-- Card 6 - CodeDuo -->
+<div class="col-md-6 col-lg-4">
+  <div class="event-card text-center">
+      <h3>CodeDuo</h3>
+      <p>Swap Code</p>
+      <button class="btn-custom" onclick="openPopup('popup6')">Rules</button>
+  </div>
+</div>
+
+<!-- Popup Window -->
+<div id="popup6" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup6')">&times;</span>
+    <h4>CodeDuo - Rules</h4>
+    <ul>
+      <li>Codeduo is a team-based coding challenge that tests participants ability to design
+        algorithms and implement them without direct problem statements. Each team
+        consists of two participants.</li>
+        <li><b>Player 1</b></li>
+        <li>Writes the pseudocode (algorithm) based on a given
+          problem statement within time limit (5 minutes).</li>
+        <li><b>Player 2</b></li>  
+        <li>Receives only the pseudocode (without the original
+          problem) and must convert it into a working Programming
+          (within 20 minutes) in programming language(python).</li>
+
+    </ul>
+  </div>
+</div>
+
+<!-- CSS -->
+<style>
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+  }
+  .popup-content {
+    text-align: center;
+    position: relative;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+</style>
+
+<!-- JavaScript -->
+<script>
+  function openPopup(id) {
+    document.getElementById(id).style.display = "block";
+  }
+  function closePopup(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+
+
+         <!-- Card 7 - ThemeSwift -->
+<div class="col-md-6 col-lg-4">
+  <div class="event-card text-center">
+      <h3>ThemeSwift</h3>
+      <p>Website Design</p>
+      <button class="btn-custom" onclick="openPopup('popup7')">Rules</button>
+  </div>
+</div>
+
+<!-- Popup Window -->
+<div id="popup7" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup7')">&times;</span>
+    <h4>ThemeSwift - Rules</h4>
+    <ul>
+      <li>In this event, teams of two will use Bootstrap to completely revamp a given
+        website, changing its layout, colors, font and components to produce a new
+        responsive design.</li>
+        <li>Teams are supposed to have two members.</li>
+        <li>For responsiveness and styling, just Bootstrap (CSS & JS) should be utilised.</li>
+        <li>The finalised redesign needs to be completely responsive and fit the specified
+theme in the allotted time. (40 minutes).</li>
+    </ul>
+  </div>
+</div>
+
+<!-- CSS -->
+<style>
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+  }
+  .popup-content {
+    text-align: center;
+    position: relative;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+</style>
+
+<!-- JavaScript -->
+<script>
+  function openPopup(id) {
+    document.getElementById(id).style.display = "block";
+  }
+  function closePopup(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+
+
+         <!-- Card 8 - Escape Odyssey -->
+<div class="col-md-6 col-lg-4">
+  <div class="event-card text-center">
+      <h3>Escape Odyssey</h3>
+      <p>Technical Problem Solver</p>
+      <button class="btn-custom" onclick="openPopup('popup8')">Rules</button>
+  </div>
+</div>
+
+<!-- Popup Window -->
+<div id="popup8" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup8')">&times;</span>
+    <h4>Escape Odyssey - Rules</h4>
+    <ul>
+      <li>Only individuals are permitted to participate.</li>
+      <li> The event will include programming challenges, technical term
+        identification, and technical quizzes</li>
+      <li>All answers must be submitted in lowercase letters.</li>
+        <li>No special characters are allowed.</li>
+          <li>No spaces are permitted between words or numbers. Instead, use
+        underscores (_).</li>
+    </ul>
+  </div>
+</div>
+
+<!-- CSS -->
+<style>
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+  }
+  .popup-content {
+    text-align: center;
+    position: relative;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+</style>
+
+<!-- JavaScript -->
+<script>
+  function openPopup(id) {
+    document.getElementById(id).style.display = "block";
+  }
+  function closePopup(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+
+          <!-- Card 9 - DigiOvium -->
+<div class="col-md-6 col-lg-4">
+  <div class="event-card text-center">
+      <h3>DigiOvium</h3>
+      <p>Meta Poster Designer</p>
+      <button class="btn-custom" onclick="openPopup('popup9')">Rules</button>
+  </div>
+</div>
+
+<!-- Popup Window -->
+<div id="popup9" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup9')">&times;</span>
+    <h4>DigiOvium - Rules</h4>
+    <ul>
+      <li>Only individual participation is permitted.</li>
+      <li>Ten minutes were allotted to creating the image.</li>
+      <li>The topic will be presented immediately.</li>
+      <li>Meta AI must be utilised for browsing the image.</li>
+      <li>The explanation needs to be short and clear.</li>
+      <li>Time Limit for Explanation: No more than five minutes.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- CSS -->
+<style>
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+  }
+  .popup-content {
+    text-align: center;
+    position: relative;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+</style>
+
+<!-- JavaScript -->
+<script>
+  function openPopup(id) {
+    document.getElementById(id).style.display = "block";
+  }
+  function closePopup(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+
+
+          <!-- Card 10 - Smart Thinker -->
+<div class="col-md-6 col-lg-4">
+  <div class="event-card text-center">
+      <h3>Smart Thinker</h3>
+      <p>IOT Innovation Challenge</p>
+      <button class="btn-custom" onclick="openPopup('popup10')">Rules</button>
+  </div>
+</div>
+
+<!-- Popup Window -->
+<div id="popup10" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup('popup10')">&times;</span>
+    <h4>Smart Thinker - Rules</h4>
+    <ul>
+      <li>Introduce an innovative IOT-based concept.</li>
+        <li>Use IOT kits, images, or PowerPoint for presentations.</li>
+          <li>If possible you have the bring your kits with you.</li>
+            <li>The most innovative concept will be identified as winner.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- CSS -->
+<style>
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+  }
+  .popup-content {
+    text-align: center;
+    position: relative;
+  }
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+</style>
+
+<!-- JavaScript -->
+<script>
+  function openPopup(id) {
+    document.getElementById(id).style.display = "block";
+  }
+  function closePopup(id) {
+    document.getElementById(id).style.display = "none";
+  }
+</script>
+
+
+          <div style="display: flex; justify-content: center; margin-top: 20px;">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8I74AP-QIAcw7irKWDo-j1VCDxLNk3mFbFI8OXPj73VfV0A/viewform"
+               style="
+                  display: inline-block;
+                  background: linear-gradient(to right,red, gold, red );
+                  color: rgb(0, 0, 0);
+                  text-decoration: none;
+                  font-family: Arial, sans-serif;
+                  font-size: 16px;
+                  font-weight: bold;
+                  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+                  border: none;
+                  border-radius: 10px;
+                  padding: 10px 20px;
+                  cursor: pointer;
+                  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+                  transition: transform 0.2s ease, box-shadow 0.2s ease;
+               " 
+               onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 5px 7px rgba(0, 0, 0, 0.3)';" 
+               onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 3px 5px rgba(0, 0, 0, 0.2)';">
+               R E G I S T E R !
+            </a>
+          </div>
+          
+      </div><!-- End of Row -->
+    </div><!-- End of Container -->
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        &copy; 2025 ASTA-2K25
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

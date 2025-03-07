@@ -1,0 +1,242 @@
+
+    /* General Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    body {
+        background-image: url("background.jpg"); /* Update to your background image path */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    /* Header Section */
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        max-width: 700px;
+        padding: 10px 20px;
+        margin: 20px auto;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .college-name, .club-name, .address {
+        color: rgb(226, 226, 226);
+        margin: 0;
+        text-align: center;
+    }
+
+    .college-name {
+        font-family: 'Marvel', sans-serif;
+        font-size: 2.0em;
+        white-space: nowrap;
+    }
+
+    .club-name {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.0em;
+    }
+
+    .text-container {
+        flex-grow: 1;
+        margin: 0 10px;
+    }
+
+    .logo {
+        width: 60px;
+        height: auto;
+    }
+
+    /* Event Logo Section */
+    .event-logo-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 200px);
+        margin-top: 20px;
+
+        
+    }
+
+    .logos-above-event {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .small-logo {
+        width: 40px;
+        height: auto;
+        margin: 0 5px;
+    }
+
+    .event-logo {
+        width: 300px;
+        height: auto;
+    }
+
+    /* Join Section */
+    .join-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 80%;
+        transform: translateY(-50%);
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .join-event {
+        font-family: 'HarryP', sans-serif;
+        color: white;
+        margin: 10px 0;
+    }
+/* Join button styling with gradient effect */
+.join-button {
+    font-family: 'HarryP', sans-serif; /* Use Marvel font for the button */
+    font-size: 1.5em; /* Button font size for emphasis */
+    background: linear-gradient(to right,red, gold, red );
+    color: rgb(0, 0, 0);
+    /* Gradient from Soft Amber to Deep Teal to Midnight Blue */
+    border: none; /* No border */
+    border-radius: 8px; /* Slightly rounded corners for rectangular shape */
+    padding: 20px; /* Padding for button */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display as inline block */
+    width: 200px; /* Set fixed width for rectangular shape */
+    text-align: center; /* Center text */
+    box-shadow: 0 0 10px rgba(212, 226, 8, 0.8), 0 0 20px rgba(228, 65, 65, 0.6); /* Amber and teal glow effect */
+    animation: pulse 1.5s infinite; /* Pulsing animation */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for background color and transform */
+    position: relative; /* Ensure pseudo-element is correctly positioned */
+}
+
+/* Pulsing effect keyframes */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 210, 125, 0.8), 0 0 20px rgba(0, 95, 115, 0.6);
+        transform: scale(1); /* Original size */
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 210, 125, 1), 0 0 30px rgba(0, 95, 115, 0.8); /* Intensified glow */
+        transform: scale(1.05); /* Slightly enlarge */
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 210, 125, 0.8), 0 0 20px rgba(0, 95, 115, 0.6);
+        transform: scale(1); /* Back to original size */
+    }
+}
+
+/* Optional: Add a slight change in background color to simulate a lighting effect */
+.join-button:active {
+    background: linear-gradient(to right, yellow, rgb(255, 0, 0), yellow);
+    /* Darken gradient on click */
+}
+
+/* Inner glow effect */
+.join-button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 210, 125, 0.2) 0%, rgba(0, 95, 115, 0) 70%);
+    border-radius: 8px; /* Match border-radius of button */
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Place it behind the button */
+}
+
+ /* Pulsing effect keyframes */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 210, 125, 0.8), 0 0 20px rgba(0, 95, 115, 0.6);
+        transform: scale(1); /* Original size */
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 210, 125, 1), 0 0 30px rgba(0, 95, 115, 0.8); /* Intensified glow */
+        transform: scale(1.05); /* Slightly enlarge */
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 210, 125, 0.8), 0 0 20px rgba(0, 95, 115, 0.6);
+        transform: scale(1); /* Back to original size */
+    }
+}
+
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+        .college-name {
+            font-size: 1.5em;
+        }
+
+        .club-name {
+            font-size: 1em;
+        }
+
+        .logo {
+            width: 50px;
+        }
+
+        .event-logo {
+            width: 500px;
+        }
+
+        .join-event {
+            font-size: 1.3em;
+        }
+
+        .join-button {
+            font-size: 1.2em;
+            padding: 15px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .college-name {
+            font-size: 1.3em;
+        }
+
+        .club-name {
+            font-size: 0.9em;
+        }
+
+        .logo {
+            width: 40px;
+        }
+
+        .event-logo {
+            width: 400px;
+        }
+
+        .join-event {
+            font-size: 1.1em;
+        }
+
+        .join-button {
+            font-size: 1em;
+            padding: 10px;
+        }
+    }

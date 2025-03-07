@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ASTA-2K25 - Technical Event</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        @font-face {
+            font-family: 'AvengersFont';
+            src: url('top1/fonts/Avengers.ttf'); /* Verify this path */
+        }
+
+        body {
+            background: linear-gradient(135deg, #f3f3f3, #e1e1e1);
+            color: #333;
+            font-family: Arial, sans-serif;
+            background-image: url('bg.jpg'); /* Change to your image URL */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .navbar a {
+            color: white !important;
+        }
+
+        .asta-title {
+            font-family: 'AvengersFont', Arial, sans-serif;
+            font-size: 5rem;
+            margin-top: 50px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .hero_section {
+            text-align: center;
+            padding: 50px 20px;
+            color: #ffffff;
+        }
+
+        .event-card {
+            background:transparent;
+            color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgb(255, 255, 255);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .event-card:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-custom {
+            background: #ff5733;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn-custom:hover {
+            background: #ffee00;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">ASTA-2K25</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="main.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">EVENTS</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Title -->
+    <h1 class="asta-title">ASTA-2K25</h1>
+
+    <!-- Hero Section -->
+    <section class="hero_section">
+        <h2>Welcome</h2>
+        <p>Join us for an amazing lineup of fun events!</p>
+    </section>
+
+    <!-- Events Section -->
+    <div class="container py-5" id="events">
+      <!-- Event Cards -->
+      <div class="row g-4 justify-content-center">
+          <!-- Card 1 - Fun-Athon -->
+<div class="col-md-6 col-lg-4">
+    <div class="event-card text-center">
+        <h3>Fun-Athon</h3>
+        <p>Fun-filled Challenge</p>
+        <button class="btn-custom" onclick="openPopup('popup16')">Rules</button>
+    </div>
+  </div>
+  
+  <!-- Popup Window -->
+  <div id="popup16" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup16')">&times;</span>
+      <h4>Fun-Athon - Rules</h4>
+      <ul>
+        <li>A thrilling team challenge for pairs! (Maximum 2 participants per team)</li>
+        <li>Get ready for a series of exciting mini-games, including:</li>
+        <li>Face Reveal: Unmask the surprise!</li>
+            <li>BGM Finder: Identify the catchy tune!</li>
+                <li>Bottle Flip: Show off your skills!</li>
+                    <li>Each team will have 4-5 minutes to complete the challenges. Are you and
+            your partner up for the fun?"</li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- CSS -->
+  <style>
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      z-index: 1000;
+    }
+    .popup-content {
+      text-align: center;
+      position: relative;
+    }
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+  
+  <!-- JavaScript -->
+  <script>
+    function openPopup(id) {
+      document.getElementById(id).style.display = "block";
+    }
+    function closePopup(id) {
+      document.getElementById(id).style.display = "none";
+    }
+  </script>
+  
+
+         <!-- Card 2 - Insta Booth -->
+<div class="col-md-6 col-lg-4">
+    <div class="event-card text-center">
+        <h3>Insta Booth</h3>
+        <p>Selfie Corner</p>
+        <button class="btn-custom" onclick="openPopup('popup17')">Rules</button>
+    </div>
+  </div>
+  
+  <!-- Popup Window -->
+  <div id="popup17" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup17')">&times;</span>
+      <h4>Insta Booth - Rules</h4>
+      <ul>
+        <li>Participants can take selfies at the designated selfie corner.</li>
+        <li>Photos must be send to the whatapp number.</li>
+        <li>Most creative and engaging photos will be shortlisted.</li>
+        <li>Judges' decisions are final.</li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- CSS -->
+  <style>
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      z-index: 1000;
+    }
+    .popup-content {
+      text-align: center;
+      position: relative;
+    }
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+  
+  <!-- JavaScript -->
+  <script>
+    function openPopup(id) {
+      document.getElementById(id).style.display = "block";
+    }
+    function closePopup(id) {
+      document.getElementById(id).style.display = "none";
+    }
+  </script>
+
+
+
+  
+  <div style="display: flex; justify-content: center; margin-top: 20px;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8I74AP-QIAcw7irKWDo-j1VCDxLNk3mFbFI8OXPj73VfV0A/viewform"
+       style="
+          display: inline-block;
+          background: linear-gradient(to right,red, gold, red );
+          color: rgb(0, 0, 0);
+          text-decoration: none;
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          font-weight: bold;
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+          border: none;
+          border-radius: 10px;
+          padding: 10px 20px;
+          cursor: pointer;
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+       " 
+       onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 5px 7px rgba(0, 0, 0, 0.3)';" 
+       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 3px 5px rgba(0, 0, 0, 0.2)';">
+       R E G I S T E R !
+    </a>
+  </div>
+  
+
+      </div><!-- End of Row -->
+    </div><!-- End of Container -->
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        &copy; 2025 ASTA-2K25
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ASTA-2K25 - Technical Event</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        @font-face {
+            font-family: 'AvengersFont';
+            src: url('top1/fonts/Avengers.ttf'); /* Verify this path */
+        }
+
+        body {
+            background: linear-gradient(135deg, #f3f3f3, #e1e1e1);
+            color: #000000;
+            font-family: Arial, sans-serif;
+            background-image: url('bg.jpg'); /* Change to your image URL */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .navbar {
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .navbar a {
+            color: white !important;
+        }
+
+        .asta-title {
+            font-family: 'AvengersFont', Arial, sans-serif;
+            font-size: 5rem;
+            margin-top: 50px;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .hero_section {
+            text-align: center;
+            color: #ffffff;
+            padding: 50px 20px;
+        }
+
+        .event-card {
+            background:transparent;
+            color: #fff7f7;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgb(255, 255, 255);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .event-card:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-custom {
+            background: #ff5733;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn-custom:hover {
+            background: #ffee01;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">ASTA-2K25</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="main.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#events">EVENTS</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Title -->
+    <h1 class="asta-title">ASTA-2K25</h1>
+
+    <!-- Hero Section -->
+    <section class="hero_section">
+        <h2>Welcome</h2>
+        <p>Join us for an amazing lineup of Non-Technical events!</p>
+    </section>
+
+    <!-- Events Section -->
+    <div class="container py-5" id="events">
+      <!-- Event Cards -->
+      <div class="row g-4 justify-content-center">
+          <!-- Card 1 -->
+          <!-- Card 11 - MindsEye -->
+<div class="col-md-6 col-lg-4">
+    <div class="event-card text-center">
+        <h3>MindsEye</h3>
+        <p>Picture Error Spotting</p>
+        <button class="btn-custom" onclick="openPopup('popup11')">Rules</button>
+    </div>
+  </div>
+  
+  <!-- Popup Window -->
+  <div id="popup11" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup11')">&times;</span>
+      <h4>MindsEye - Rules</h4>
+      <ul>
+        <li><b>First Round</b></li>
+        <li>Teams must consist of two participants.</li>
+            <li>Each team will be given an image with hidden mistake</li>
+                <li>Teams have one minute to find errors.</li>
+                <li><b>Second round</b></li>
+                <li>Team of 2: One Clue Giver, one Guesser.</li>
+                    <li>No direct synonyms, spelling, gestures, or writing.</li>
+                        <li>2 minutes =6 words.</li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- CSS -->
+  <style>
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      z-index: 1000;
+    }
+    .popup-content {
+      text-align: center;
+      position: relative;
+    }
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+  
+  <!-- JavaScript -->
+  <script>
+    function openPopup(id) {
+      document.getElementById(id).style.display = "block";
+    }
+    function closePopup(id) {
+      document.getElementById(id).style.display = "none";
+    }
+  </script>
+  
+
+          <!-- Card 2 - Mission Impossible -->
+<div class="col-md-6 col-lg-4">
+    <div class="event-card text-center">
+        <h3>Mission Impossible</h3>
+        <p>Open Door Using Clues</p>
+        <button class="btn-custom" onclick="openPopup('popup12')">Rules</button>
+    </div>
+  </div>
+  
+  <!-- Popup Window -->
+  <div id="popup12" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup12')">&times;</span>
+      <h4>Mission Impossible - Rules</h4>
+      <ul>
+        <li>Teams of two people are required to participate.</li>
+        <li>To leave the room, teams must solve riddles and locate clues.</li>
+        <li>They have ten minutes to do so.</li>
+        <li>Only the top 20 registered teams will be chosen for this competition.</li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- CSS -->
+  <style>
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      z-index: 1000;
+    }
+    .popup-content {
+      text-align: center;
+      position: relative;
+    }
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+  
+  <!-- JavaScript -->
+  <script>
+    function openPopup(id) {
+      document.getElementById(id).style.display = "block";
+    }
+    function closePopup(id) {
+      document.getElementById(id).style.display = "none";
+    }
+  </script>
+  
+          <!-- Card 3 - Geo Caching -->
+<div class="col-md-6 col-lg-4">
+    <div class="event-card text-center">
+        <h3>Geo Caching</h3>
+        <p>Mystery Hunter</p>
+        <button class="btn-custom" onclick="openPopup('popup13')">Rules</button>
+    </div>
+  </div>
+  
+  <!-- Popup Window -->
+  <div id="popup13" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup13')">&times;</span>
+      <h4>Geo Caching - Rules</h4>
+      <ul>
+        <li>Each team has two members.</li>
+            <li>It is forbidden to browse the internet.</li>
+                <li>There will be a code in QR format with questions.</li>
+                    <li>The winner is decided by the maximum number of right answers.</li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- CSS -->
+  <style>
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      z-index: 1000;
+    }
+    .popup-content {
+      text-align: center;
+      position: relative;
+    }
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+  
+  <!-- JavaScript -->
+  <script>
+    function openPopup(id) {
+      document.getElementById(id).style.display = "block";
+    }
+    function closePopup(id) {
+      document.getElementById(id).style.display = "none";
+    }
+  </script>
+  
+
+          <!-- Card 4 - Branding -->
+<div class="col-md-6 col-lg-4">
+    <div class="event-card text-center">
+        <h3>Branding</h3>
+        <p>Marketing</p>
+        <button class="btn-custom" onclick="openPopup('popup14')">Rules</button>
+    </div>
+  </div>
+  
+  <!-- Popup Window -->
+  <div id="popup14" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup14')">&times;</span>
+      <h4>Branding - Rules</h4>
+      <ul>
+        <li>The products name will be given by the event organizers for every 3 rounds.</li>
+            <li>Every 2 rounds, there will be a pre-round preparation period.</li>
+                <li>There will be a mobile phone search time for the product for every 2 rounds.</li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- CSS -->
+  <style>
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      z-index: 1000;
+    }
+    .popup-content {
+      text-align: center;
+      position: relative;
+    }
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+  
+  <!-- JavaScript -->
+  <script>
+    function openPopup(id) {
+      document.getElementById(id).style.display = "block";
+    }
+    function closePopup(id) {
+      document.getElementById(id).style.display = "none";
+    }
+  </script>
+  
+
+
+          <!-- Card 5 - Cinematic Short -->
+<div class="col-md-6 col-lg-4">
+    <div class="event-card text-center">
+        <h3>Cinematic Short</h3>
+        <p>Short Film</p>
+        <button class="btn-custom" onclick="openPopup('popup15')">Rules</button>
+    </div>
+  </div>
+  
+  <!-- Popup Window -->
+  <div id="popup15" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup('popup15')">&times;</span>
+      <h4>Cinematic Short - Rules</h4>
+      <ul>
+        <li>The video should be longer than 5 minutes.</li>
+            <li>The Participants have the option to select the video topics.</li>
+                <li>There should be no violations of the video content.</li>
+                    <li>Due to copyright regulation, videos cannot be downloaded or
+            copied without permission</li>
+               <li>The video content should be specific and easy to grasp.</li>
+                <li>Each participant is required to send the video the video</li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- CSS -->
+  <style>
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      z-index: 1000;
+    }
+    .popup-content {
+      text-align: center;
+      position: relative;
+    }
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+  
+  <!-- JavaScript -->
+  <script>
+    function openPopup(id) {
+      document.getElementById(id).style.display = "block";
+    }
+    function closePopup(id) {
+      document.getElementById(id).style.display = "none";
+    }
+  </script>
+
+
+
+  
+  <div style="display: flex; justify-content: center; margin-top: 20px;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8I74AP-QIAcw7irKWDo-j1VCDxLNk3mFbFI8OXPj73VfV0A/viewform"
+       style="
+          display: inline-block;
+          background: linear-gradient(to right,red, gold, red );
+          color: rgb(0, 0, 0);
+          text-decoration: none;
+          font-family: Arial, sans-serif;
+          font-size: 16px;
+          font-weight: bold;
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+          border: none;
+          border-radius: 10px;
+          padding: 10px 20px;
+          cursor: pointer;
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+          transition: transform 0.2s ease, box-shadow 0.2s ease;
+       " 
+       onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 5px 7px rgba(0, 0, 0, 0.3)';" 
+       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 3px 5px rgba(0, 0, 0, 0.2)';">
+       R E G I S T E R !
+    </a>
+  </div>
+  
+
+      </div><!-- End of Row -->
+    </div><!-- End of Container -->
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        &copy; 2025 ASTA-2K25
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
